@@ -574,8 +574,8 @@ function loop() {
 
     camera.position.copy(pos);
 
-    // send state at ~20 Hz
-    if (now - lastSentAt > 50) {
+    // send state at ~120 Hz
+    if (now - lastSentAt > 8) {
       lastSentAt = now;
       socket.emit('state', {
         position: { x: camera.position.x, y: camera.position.y, z: camera.position.z },

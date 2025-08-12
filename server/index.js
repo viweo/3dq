@@ -26,7 +26,7 @@ const io = new SocketIOServer(server, {
   cors: { origin: '*'}
 });
 
-const TICK_RATE_HZ = 20;
+const TICK_RATE_HZ = 120;
 const WORLD_BROADCAST_INTERVAL_MS = Math.floor(1000 / TICK_RATE_HZ);
 const PLAYER_RADIUS = 0.6;
 const MAX_HEALTH = 100;
